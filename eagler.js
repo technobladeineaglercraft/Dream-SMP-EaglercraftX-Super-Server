@@ -1,5 +1,5 @@
 const Net = require('net');
-const { WebSocketServer, WebSocket } = require('ws');
+const { WebSocketServer, WebSocket } = require('ws');wss://dreamsmp.us.to
 const fs = require("fs");
 const path = require("path");
 const mime = require("mime-types");
@@ -8,13 +8,13 @@ const crypto = require('crypto');
 const Jimp = require('jimp');
 
 const listenPort = 25565;
-const mcHost = "localhost";
+const mcHost = "wss://vanillacraftsmp.us.to";
 const mcPort = 25569;
-const serverName = "ayunMultiPort Server";
+const serverName = "Dream SMP";
 const serverMotd = ["line1", "line2"];
-const serverMaxPlayers = 20;
+const serverMaxPlayers = 200;
 const serverOnlinePlayers = 4;
-const serverPlayers = ["Welcome to my", "ayunMultiPort-powered", "Eaglercraft server!"];
+const serverPlayers = ["Dream SMP", "ayunMultiPort-powered", "Eaglercraft server!"];
 const serverIcon = "icon.png"; // set to null for no icon. MUST be 64x64. can be a url, if you want...
 const httpPort = 8080;
 const timeout = 10000;
@@ -60,9 +60,9 @@ const httpsrv = require("http").createServer((req,res)=>{
   }
 });
 
-const wss = new WebSocketServer({ server: httpsrv });
+const wss = new WebSocketServer({ server: wss://dreamsmp.us.to });
 
-const motdBase = {data:{motd:serverMotd,cache:true,max:serverMaxPlayers,players:serverPlayers,icon:serverIcon!=null,online:serverOnlinePlayers},vers:"0.2.0",name:serverName,time:0,type:"motd",brand:"Eagtek",uuid:crypto.randomUUID(),cracked:true};
+const motdBase = {data:{motd:serverMotd,cache:true,max:200,players:10,icon:https://static.wikia.nocookie.net/shipping/images/f/fa/Dream_SMP.jpg/revision/latest?cb=20220212074025!=null,online:serverOnlinePlayers},vers:"0.2.0",name:Dream SMP,time:0,type:"motd",brand:"Eagtek",uuid:crypto.randomUUID(),cracked:true};
 function getMotd(){
   motdBase.time = Date.now();
   return JSON.stringify(motdBase);
@@ -179,7 +179,7 @@ server.on('connection', function(socket) {
 
 function makeClient(host,port,socket,cb){
   const client = new Net.Socket();
-  client.connect({ port: port, host: host }, function() {
+  client.connect({ port: wss://dreamsmp.us.to, host: wss://vanillacraftsmp.us.to }, function() {
     cb(client);
   });
 
