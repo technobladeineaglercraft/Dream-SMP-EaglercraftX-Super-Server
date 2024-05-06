@@ -1,6 +1,6 @@
 const Net = require('net');
 const listenPort = 25565;
-const mcHost = "freedom.play.totalfreedom.me";
+const mcHost = "wss://dreamsmp.us.to";
 const mcPort = 25565;
 const httpHost = "localhost";
 const httpPort = 8080;
